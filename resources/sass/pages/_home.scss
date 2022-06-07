@@ -1,0 +1,46 @@
+// Home
+.home-main {
+  width: 100%;
+}
+
+.home-sidebar {
+  width: calc(100% - $padding-md*2);
+
+  &__announcement {
+    border: 1px solid $red;
+    color: $red;
+    padding: $padding-sm;
+    margin-top: $margin-md;
+    border-radius: $border-radius-sm;
+  }
+
+  &__upcoming, &__doc {
+    padding: $padding-md 0;
+    border-bottom: 1px solid $primary-color;
+    color: $primary-color;
+  }
+}
+
+@media (min-width: 48rem) {
+  .home-main {
+    width: calc(100% - 315px);
+  }
+  
+  .home-sidebar {
+    width: 315px;
+  
+    &__announcement {
+      border: 1px solid $red;
+      color: $red;
+      padding: $padding-sm;
+      margin-top: $margin-md;
+      border-radius: $border-radius-sm;
+    }
+  
+    &__upcoming, &__doc {
+      padding: $padding-md 0;
+      border-bottom: 1px solid $primary-color;
+      color: $primary-color;
+    }
+  }
+}

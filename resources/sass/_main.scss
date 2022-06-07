@@ -1,0 +1,108 @@
+/******************
+Base
+******************/
+
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $background-color;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.h-layout {
+  padding: 0 2rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Syne', sans-serif;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  width: 80%;
+  font-size: $font-size-md;
+  color: $primary-color;
+  font-weight: $font-weight-bold;
+}
+
+@media (min-width: 48rem) {
+  h1{
+    width: 100%;
+    font-size: $font-size-lg;
+  }
+}
+
+h2 {
+  font-size: $font-size-md;
+  color: $primary-color;
+  font-weight: $font-weight-bold;
+  margin: 0;
+}
+
+//Main
+.main-content {
+  width: 100vw;
+  padding-left: 0;
+  padding-top: $padding-sm;
+  display: block;
+  min-height: 83vh;
+}
+
+@media (min-width: 48rem) {
+  .main-content {
+    width: calc(100vw - $width-nav - $padding-sm);
+    padding-left: calc($width-nav + $padding-sm);
+    padding-top: 0;
+    display: flex;
+  }
+}
+
+.green {
+  color: $tertiare-color;
+}
+
+//FEEDBACK TO USER
+.succes {
+  border-radius: $border-radius-sm;
+  width: 60%;
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding: $padding-sm;
+  margin-bottom: $margin-md;
+}
+
+.danger {
+  border-radius: $border-radius-sm;
+  width: 60%;
+  background-color: $red;
+  color: $white;
+  padding: $padding-sm;
+  margin-bottom: $margin-md;
+}
+
+.invalid-feedback {
+  color: $red;
+  display: block;
+  margin-top: $padding-sm;
+  font-weight: $font-weight-medium;
+}

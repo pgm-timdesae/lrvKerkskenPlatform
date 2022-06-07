@@ -1,0 +1,14 @@
+//Footer
+footer {
+  padding: $padding-md 0;
+  text-align: left;
+  opacity: 0.5;
+}
+
+@media (min-width: 48rem) {
+  footer {
+    width: calc(100vw - $width-nav);
+    padding-left: $width-nav;
+    text-align: center;
+  }
+}

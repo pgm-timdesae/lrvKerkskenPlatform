@@ -1,0 +1,230 @@
+// Events on homepage
+.events-home__header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 48rem) {
+  .events-home__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $margin-md;
+  
+    a {
+      display: block;
+    }
+  }
+}
+
+
+.events-home__list {
+  display: flex;
+  flex-direction: column;
+
+  &-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    .wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: $padding-sm;
+      border-radius: $border-radius-md;
+      background-color: $white;
+
+      .inner-wrap {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .image {
+          width: 100%;
+          //height: 100%;
+          position: relative;
+          background: $white;
+          border-radius: $border-radius-sm;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: 1;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.75s;
+
+            //transform: scale(1.01) rotate(0.001deg);
+            //transition: all .4s cubic-bezier(.7, 0, .3, 1);
+          }
+
+          &__date {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: $background-color;
+            color: $primary-color;
+            padding: $padding-sm/2 $padding-sm;
+            border-radius: $border-radius-sm;
+            text-transform: uppercase;
+            font-weight: $font-weight-bold;
+            z-index: 2;
+          }
+        }
+
+        .text {
+          .btn-primary {
+            display: inline-block;
+            width: calc(100% - $padding-md*2);
+            text-align: center;
+          }
+        }
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.05) rotate(2deg);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .events-home__list {
+    gap: $gap-width;
+    flex-direction: row;
+  
+    &-item {
+      position: relative;
+      width: 100%;
+      display: flex;
+    }
+  }  
+}
+
+// Events on event page
+
+.events-event__list {
+  flex-direction: column;
+  margin-top: $margin-md;
+
+  .wrapper {
+    box-shadow: $box-shadow;
+    margin-bottom: $margin-md;
+
+    .inner-wrap {
+      flex-direction: column;
+      justify-content: space-between;
+
+      .image {
+        width: 100%;
+
+        &__date {
+          top: 0;
+          left: 0;
+          bottom: auto;
+        }
+      }
+
+      .text {
+        width: 100%;
+        position: relative;
+
+        .svg-edit {
+          position: absolute;
+          top: 1.5rem;
+          right: 3rem;
+          display: inline;
+          width: 1.5rem;
+          margin-right: $margin-sm; 
+          filter: $green-filter;   
+        }
+
+        .svg-delete {
+          position: absolute;
+          top: 1.5rem;
+          right: 0rem;
+          display: inline;
+          margin-right: $margin-sm;
+          background-color: transparent; 
+          border: none;
+          cursor: pointer;
+
+          svg {
+            filter: $red-filter;
+            width: 1.5rem;
+          }
+        }
+
+        .tag {
+          padding: $padding-sm/2 $padding-sm;
+          border: 1px solid $primary-color;
+          display: inline-block;
+          border-radius: $border-radius-sm;
+        }
+
+        .btn-primary {
+          width: 10rem;
+          display: block;
+          margin-top: $margin-md;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .events-event__list {
+    flex-direction: column;
+    margin-top: $margin-md;
+  
+    .wrapper {
+      box-shadow: $box-shadow;
+  
+      .inner-wrap {
+        flex-direction: row;
+        justify-content: space-between;
+  
+        .image {
+          width: 30%;
+  
+          &__date {
+            top: 0;
+            left: 0;
+            bottom: auto;
+          }
+        }
+  
+        .text {
+          width: 65%;
+          position: relative;
+  
+          .svg-edit {
+            top: 1rem;
+          }
+  
+          .svg-delete {
+            top: 1rem;
+          }
+  
+          .tag {
+          }
+  
+          .btn-primary {
+            width: 10rem;
+            display: block;
+            margin-top: $margin-md;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

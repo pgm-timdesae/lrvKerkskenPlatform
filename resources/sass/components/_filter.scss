@@ -1,0 +1,29 @@
+ //Filter
+ .filter {
+  margin: $margin-md 0;
+
+  p {
+    text-transform: uppercase;
+    display: block;
+  }
+
+  .tag {
+    padding: $padding-sm/2 $padding-sm;
+    border: 1px solid $primary-color;
+    display: inline-block;
+    border-radius: $border-radius-sm;
+    margin-right: $margin-sm;
+    margin-bottom: $margin-sm;
+    transition: $transition-base;
+
+    &.active {
+      background-color: $tertiare-color;
+      border: 1px solid $tertiare-color;
+    }
+
+    &:hover {
+      background-color: $tertiare-color;
+      border: 1px solid $tertiare-color;
+    }
+  }
+}

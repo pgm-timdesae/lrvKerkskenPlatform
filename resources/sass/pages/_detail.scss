@@ -1,0 +1,96 @@
+//DETAIL EVENT
+.detail-page {
+  .flex {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .detail-main {
+      width: 90%;
+
+      h2 {
+        margin-bottom: $margin-md;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+
+    .detail-sidebar {
+      width: 90%;
+      background-color: $white;
+      border-radius: $border-radius-sm;
+      padding: $padding-sm;
+      margin: $margin-md 0;
+
+      .text-group {
+        .small-title {
+          text-transform: uppercase;
+          opacity: 0.5;
+        }    
+        
+        p {
+          margin-top: $margin-xs;
+          color: $primary-color;
+        } 
+      }   
+    }
+  }
+
+  .going {
+    margin-top: $margin-md;
+    
+    .circle {
+      padding: $padding-sm;
+      border-radius: $border-radius-lg;
+      position: relative;
+      width: 2rem;
+      height: 2rem;
+      display: inline-block;
+      transition: $transition-base;
+    }
+
+    .users-list {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+
+      &-item {
+        width: 100%;
+        position: relative;
+        padding: $padding-md 0; 
+        margin-bottom: 0;
+        margin-right: 0;
+        
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $white;
+          height: 2px;
+          width: 100%;
+          bottom: 0;
+          left: 0;
+          transition: $transition-base;
+        }    
+      }
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .detail-page {
+    .flex {
+      flex-direction: row;
+      justify-content: space-between;
+      width: calc(90vw - $width-nav);
+    
+      .detail-main {
+        width: 60%;
+      }
+  
+      .detail-sidebar {
+        width: 25%;
+      }
+    }
+  }  
+}

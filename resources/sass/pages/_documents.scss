@@ -1,0 +1,111 @@
+//DOCUMENTS
+.document-page {
+  .intro {
+    margin: $margin-md 0;
+  }
+  
+  .documents-list {
+    display: flex;
+    flex-direction: column;
+  
+    &-item {
+      width: 100%;
+      position: relative;
+      padding: $padding-md 0;
+  
+      .flex {
+        svg {
+          width: 3rem;
+        }
+  
+        .btn-primary {
+          display: inline-block;
+          width: calc(100% - $padding-md*2);
+          text-align: center;
+        }
+  
+        .btn-delete {
+          margin-top: $margin-sm;
+  
+          svg {
+            width: 1.4rem;
+            margin-right: 0;
+            filter: $red-filter;
+          }
+  
+          &:hover{
+            svg {
+              filter: brightness(0) invert(1);
+            }
+          }
+        }
+  
+        h3 {
+          font-weight: $font-weight-medium;
+        }
+      }
+  
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $white;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transition: $transition-base;
+      }
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .document-page {
+    width: 100%;
+
+    .intro {
+      width: 50%;
+    }
+
+    .documents-list {
+      display: flex;
+      flex-direction: column;
+    
+      &-item {  
+        .flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+  
+          svg {
+           margin-right: $margin-md; 
+          }
+  
+          h3 {
+            width: 40%;
+          }
+  
+          .created {
+            width: 20%;
+          }
+    
+          .btn-primary {
+            width: 10rem;
+            margin-top: 0;
+          }
+
+          .btn-delete {
+            margin-top: 0;
+            margin-left: $margin-sm;
+            margin-right: $margin-sm;
+
+            svg {
+              width: 1.4rem;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }  
+  }
+}

@@ -1,0 +1,69 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$primary-color: #355E42;
+$secondary-color: #B4F55B;
+$tertiare-color: #92EB68;
+$background-color: #ECF5F3;
+
+$white: #fff;
+$black: #000;
+$red: #EB5250;
+
+//filter
+$red-filter: invert(39%) sepia(81%) saturate(706%) hue-rotate(319deg) brightness(95%) contrast(94%);
+$green-filter: invert(29%) sepia(66%) saturate(318%) hue-rotate(86deg) brightness(87%) contrast(82%);
+
+//Margins
+$margin-xs: 0.5rem;
+$margin-sm: 1rem;
+$margin-md: 2rem;
+$margin-lg: 5rem;
+$margin-xl: 7rem;
+
+//Paddings
+$padding-xs: 0.5rem;
+$padding-sm: 1rem;
+$padding-md: 2rem;
+$padding-lg: 5rem;
+$padding-xl: 7rem;
+
+//Font-sizes
+$font-size-xs: 0.5rem;
+$font-size-sm: 1rem;
+$font-size-base: 1.3rem;
+$font-size-md: 1.8rem;
+$font-size-lg: 3rem;
+$font-size-xl: 5rem;
+
+//width
+$width-nav: 17vw;
+
+//Border radius
+$border-radius-sm: 10px;
+$border-radius-md: 25px;
+$border-radius-lg: 50px;
+
+//Font-weight
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+//Gap width
+$gap-width: 1.5rem;
+
+//box-shadow
+$box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+//transition
+$transition-slow: .5s all ease-in;
+$transition-base: .3s all ease-in;
+$transition-fast: .1s all ease-in;

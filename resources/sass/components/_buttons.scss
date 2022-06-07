@@ -1,0 +1,96 @@
+/* Buttons */
+.btn-link {
+  transition: $transition-base;
+  padding: $padding-sm 0;
+
+  &:hover {
+    color: $tertiare-color;
+  }
+}
+
+.btn-primary {
+  background-color: $tertiare-color;
+  color: $primary-color;
+  border: none;
+  border-radius: $border-radius-sm;
+  padding: $padding-md/2 $padding-md;
+  width: 100%;
+  cursor: pointer;
+  transition: all .4s cubic-bezier(.7, 0, .3, 1);
+  margin-top: $margin-sm;
+
+  span {
+    font-size: $font-size-sm;
+    //text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+.btn-submit {
+  width: 20%;
+  margin-left: $margin-md;
+}
+
+.btn-add {
+  display: inline-block;
+  position: relative;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: $border-radius-sm;
+  padding: $padding-md/2;
+  cursor: pointer;
+  transition: all .4s cubic-bezier(.7, 0, .3, 1);
+  margin-bottom: $margin-md;
+
+
+  span {
+    font-size: $font-size-sm;
+  }
+
+  &:hover {
+    border: 1px solid $tertiare-color;
+    background-color: $tertiare-color;
+  }
+}
+
+@media (min-width: 48rem) {
+  .btn-add {
+    display: inline-block;
+    position: absolute;
+    top: $margin-sm;
+    right: $margin-md;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: $border-radius-sm;
+    padding: $padding-md/2;
+    cursor: pointer;
+    transition: all .4s cubic-bezier(.7, 0, .3, 1);
+    margin-top: $margin-sm;
+  }
+}
+
+.btn-delete {
+  display: inline-block;
+  width: 100%;
+  background-color: transparent;
+  color: $red;
+  border: 1px solid $red;
+  border-radius: $border-radius-sm;
+  padding: $padding-md/2;
+  cursor: pointer;
+  transition: all .4s cubic-bezier(.7, 0, .3, 1);
+  margin-top: $margin-sm;
+
+  span {
+    font-size: $font-size-sm;
+  }
+
+  &:hover {
+    border: 1px solid $red;
+    background-color: $red;
+    color: $white;
+  }
+}

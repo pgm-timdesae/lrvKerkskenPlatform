@@ -1,0 +1,78 @@
+//Forms
+.form {
+  &__group {
+    margin-bottom: $margin-md;
+
+    .number {
+      margin-right: $margin-xs;
+      color: $tertiare-color;
+      font-weight: $font-weight-medium;
+    }
+
+    label {
+      font-size: $font-size-base;
+      display: block;
+      font-weight: $font-weight-regular;
+      margin-bottom: $margin-sm;
+    }
+
+    input, select, textarea {
+      background-color: transparent;
+      padding: $padding-sm;
+      padding-left: 0;
+      border: none;
+      border-bottom: 2px solid $white;
+      width: calc(100% - $margin-md*2);
+      margin-left: $margin-md;
+      font-family: 'Poppins', sans-serif;
+
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid $tertiare-color;
+      }
+    }
+  }
+
+  button {
+    width: calc(100% - $margin-md*2);
+  }
+}
+
+.form-auth {
+  width: calc(100vw - $padding-md*2);
+  //background-color: $white;
+
+  label {
+    font-size: $font-size-sm;
+    margin-bottom: 0;
+  }
+
+  input, select, textarea {
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  button {
+    display: block;
+    margin-left: 0;
+    margin-bottom: $margin-sm;
+    width: 100%;
+  }
+
+  .form-check-input {
+    border: 1px solid $tertiare-color;
+  }
+}
+
+@media (min-width: 48rem) {
+  .form-auth {
+    width: 40vw;
+
+    button {
+      display: block;
+      margin-left: 0;
+      margin-bottom: $margin-sm;
+      width: 17vw;
+    }  
+  }
+}

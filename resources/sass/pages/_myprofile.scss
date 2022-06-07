@@ -1,0 +1,98 @@
+// My profile
+.myprofile {
+  width: auto;
+
+  .wrapper {
+    background-color: $white;
+    padding: $padding-sm;
+    border-radius: $border-radius-md;
+    box-shadow: $box-shadow;
+    transition: $transition-base;
+    display: flex;
+    position: relative;
+
+    .image{
+      width: 7rem;
+      height: 7rem;
+      position: relative;
+      background: $white;
+      border-radius: $border-radius-sm;
+      overflow: hidden;  
+      margin-right: $margin-md;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 1;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.75s;  
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      padding-left: $padding-md;
+      border-left: 2px solid $tertiare-color;
+      
+      h2 {
+        display: block;
+      }
+
+      h3 {
+        color: $primary-color;
+      }
+
+      .small-title {
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+
+      .role {
+        padding: $padding-sm/2 $padding-sm;
+        border: 1px solid $primary-color;
+        display: inline-block;
+        border-radius: $border-radius-sm;
+        color: $primary-color;
+        margin: $margin-sm 0;
+      }
+
+      p {
+        margin-top: $margin-xs;
+        color: $primary-color;
+      }
+    }
+
+    .svg-edit {
+      position: absolute;
+      left: 1rem;
+      top: 10rem;
+      display: inline;
+      width: 2rem;
+      margin-right: $margin-sm; 
+      filter: $green-filter;   
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .myprofile {
+    width: 100%;
+  
+    .wrapper {
+      .image{
+        width: 12rem;
+        height: 12rem;
+        }
+          
+      .svg-edit {
+        right: 2rem;
+        top: 1rem;
+        left: auto;
+        width: 2rem;
+      }
+    }
+  }  
+}

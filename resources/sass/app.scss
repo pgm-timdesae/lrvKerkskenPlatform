@@ -1,0 +1,32 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+// Variables
+@import 'variables';
+
+//Components
+@import 'components/buttons';
+@import 'components/eventlist';
+@import 'components/filter';
+@import 'components/form';
+@import 'components/eventlist';
+@import 'components/search';
+
+//Layouts
+@import 'layouts/footer';
+@import 'layouts/header';
+
+//Pages
+@import 'pages/calendar';
+@import 'pages/detail';
+@import 'pages/documents';
+@import 'pages/home';
+@import 'pages/myprofile';
+@import 'pages/users';
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+//Main
+@import 'main';

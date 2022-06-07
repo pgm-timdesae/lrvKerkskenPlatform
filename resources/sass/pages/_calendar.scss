@@ -1,0 +1,92 @@
+.calendar-page {
+  width: 100%;
+
+  .calendar-list{
+    margin-top: $padding-md;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      padding: $padding-md;
+      position: relative;
+      transition: $transition-base;
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .circle {
+          padding: $padding-sm;
+          border-radius: $border-radius-lg;
+          position: absolute;
+          top: calc(50% - 2rem);
+          right: 2rem;
+          width: 2rem;
+          height: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: $transition-base;
+
+          svg {
+            width: 1.5rem;
+          }
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $white;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transition: .3s all ease-in;
+      }  
+
+      &:hover {
+        background-color: $white;
+
+        .circle {
+          background-color: $tertiare-color;
+        }
+      }
+
+      &:first-of-type {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 48rem) {
+  .calendar-page {  
+    .calendar-list{
+      margin-top: 0;
+
+      &-item {  
+        .wrapper {
+          flex-direction: row;
+
+          .datum, .location {
+            width: 25%;
+          }
+
+          .event {
+            width: 50%;
+          }
+        }
+
+        &:first-of-type {
+          font-weight: $font-weight-semibold;
+          font-size: $font-size-sm;
+  
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
