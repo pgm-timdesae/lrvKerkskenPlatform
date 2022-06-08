@@ -29,3 +29,15 @@
     }
   }
 }
+
+//botman
+
+#messageArea {
+  ol.chat {
+    background-color: $background-color !important;
+  
+    .chatbot {
+      background-color: $primary-color !important;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 
 namespace App\Botman;
 
+use App\Models\Event;
 use BotMan\BotMan\Messages\Outgoing\Question;
 use BotMan\BotMan\Messages\Outgoing\Actions\Button;
 use BotMan\BotMan\Messages\Conversations\Conversation;
@@ -33,13 +34,17 @@ class SelectEventConversation extends Conversation
 
   public function askService()
   {
-    $question = Question::create('What kind of Service you are looking for?')
-      ->callbackId('select_event')
-      ->addButtons([
-        Button::create('Werkdag')->value('1'),
-        Button::create('Clubfeest')->value('2'),
-        Button::create('Springles')->value('3'),
+    $events = Event::all();
+
+    $question = Question::create('Voor welk evenement wil je inschrijven?')
+      ->callbackId('select_event');
+
+    foreach ($events as $event) {
+      $question->addButtons([
+        Button::create($event->name)->value($event->id),
       ]);
+    }
+
 
     $this->ask($question, function (Answer $answer) {
       if ($answer->isInteractiveMessageReply()) {

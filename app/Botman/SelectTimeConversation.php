@@ -17,6 +17,8 @@ class SelectTimeConversation extends Conversation
       ->addButtons([
         Button::create('Tijdslot 1: 18u00 - 18u30')->value('one'),
         Button::create('Tijdslot 2: 18u30 - 19u00')->value('two'),
+        Button::create('Tijdslot 2: 19u00 - 19u30')->value('two'),
+        Button::create('Geen tijdslot')->value('no'),
       ]);
 
     $this->ask($question, function (Answer $answer) {

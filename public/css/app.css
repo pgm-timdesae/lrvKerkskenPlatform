@@ -903,6 +903,13 @@ footer {
     width: 65%;
   }
 }
+#messageArea ol.chat {
+  background-color: #ECF5F3 !important;
+}
+#messageArea ol.chat .chatbot {
+  background-color: #355E42 !important;
+}
+
 .detail-page .flex {
   display: flex;
   flex-direction: column-reverse;

@@ -16,7 +16,7 @@ class OnboardingConversation extends Conversation
 
   public function askName()
   {
-    $this->ask('Hi! What is your name?', function (Answer $answer) {
+    $this->ask('Hallo! Wat is jouw naam?', function (Answer $answer) {
       // Save result
       $this->bot->userStorage()->save([
         'name' => $answer->getText(),
