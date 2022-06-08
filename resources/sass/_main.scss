@@ -83,7 +83,7 @@ h2 {
 //FEEDBACK TO USER
 .succes {
   border-radius: $border-radius-sm;
-  width: 60%;
+  width: fit-content;
   background-color: $secondary-color;
   color: $primary-color;
   padding: $padding-sm;

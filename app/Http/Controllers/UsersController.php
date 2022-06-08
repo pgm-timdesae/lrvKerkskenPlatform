@@ -16,7 +16,6 @@ class UsersController extends Controller
    */
   public function index()
   {
-
     $users = User::orderBy('name', 'asc')
       ->filter(request(['search']))
       ->get();

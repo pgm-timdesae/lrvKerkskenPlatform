@@ -863,12 +863,13 @@ footer {
     flex-direction: row;
   }
   .calendar-page .calendar-list-item .wrapper .datum, .calendar-page .calendar-list-item .wrapper .location {
-    width: 25%;
+    width: 13%;
   }
-  .calendar-page .calendar-list-item .wrapper .event {
-    width: 50%;
+  .calendar-page .calendar-list-item .wrapper .event, .calendar-page .calendar-list-item .wrapper .time {
+    width: 30%;
   }
   .calendar-page .calendar-list-item:first-of-type {
+    display: block;
     font-weight: 600;
     font-size: 1rem;
   }
@@ -883,11 +884,16 @@ footer {
 .detail-page .flex .detail-main {
   width: 90%;
 }
+.detail-page .flex .detail-main .succes {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .detail-page .flex .detail-main h2 {
   margin-bottom: 2rem;
 }
 .detail-page .flex .detail-main button {
-  width: 100%;
+  width: calc(100% - 4rem);
 }
 .detail-page .flex .detail-sidebar {
   width: 90%;
@@ -950,6 +956,9 @@ footer {
   }
   .detail-page .flex .detail-sidebar {
     width: 25%;
+  }
+  .detail-page .going {
+    margin-left: 2rem;
   }
 }
 .document-page .intro {
@@ -1353,7 +1362,9 @@ h2 {
 
 .succes {
   border-radius: 10px;
-  width: 60%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: #B4F55B;
   color: #355E42;
   padding: 1rem;

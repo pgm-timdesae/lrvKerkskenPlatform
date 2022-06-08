@@ -70,15 +70,16 @@
           flex-direction: row;
 
           .datum, .location {
-            width: 25%;
+            width: 13%;
           }
 
-          .event {
-            width: 50%;
+          .event, .time {
+            width: 30%;
           }
         }
 
         &:first-of-type {
+          display: block;
           font-weight: $font-weight-semibold;
           font-size: $font-size-sm;
   

@@ -15,6 +15,8 @@
               <select name="time" id="time">
                 <option value="one">Tijdslot 1: 18u00 - 18u30</option>
                 <option value="two">Tijdslot 2: 18u30 - 19u00</option>
+                <option value="tree">Tijdslot 3: 19u00 - 19u30</option>
+                <option value="no">Geen tijdslot nodig</option>
               </select>
             </div>
       

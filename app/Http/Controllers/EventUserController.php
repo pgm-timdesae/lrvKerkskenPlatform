@@ -17,6 +17,7 @@ class EventUserController extends Controller
   {
     $user = User::find(auth()->user()->id);
 
+    //dd($user->events->pivot->id);
     return view('mycalendar.index', [
       'user' => $user
     ]);
@@ -91,6 +92,9 @@ class EventUserController extends Controller
    */
   public function destroy($id)
   {
-    //
+    /* $id = User::find(auth()->user()->id);
+    User::find($id)->events()->detach();
+
+    return redirect('/mycalendar'); */
   }
 }

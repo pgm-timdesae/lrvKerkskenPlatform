@@ -42,7 +42,7 @@ Route::get('/chatbot', [PagesController::class, 'chatbot']);
 // Events
 //Route::get('events/{id}', [EventsController::class, 'show']);
 Route::resource('/events', EventsController::class);
-Route::get('/events/past', [EventsController::class, 'past']);
+//Route::get('/events/past', [EventsController::class, 'past']);
 
 // Users
 Route::resource('/users', UsersController::class);
@@ -50,7 +50,7 @@ Route::resource('/users', UsersController::class);
 // Documents
 Route::resource('/files', FilesController::class);
 
-// Documents
+// Calender
 Route::resource('/mycalendar', EventUserController::class);
 
 // Categories
@@ -65,7 +65,3 @@ Route::get('categories/{category:slug}', function (Category $category) {
 Botman
  **************/
 Route::match(['get', 'post'], 'botman', [BotManController::class, 'handle']);
-
-//Route::match(['get', 'post'], '/chatbot', [BotmanController::class . 'enterRequest']);
-
-//Route::match(['get', 'post'], '/botman', [BotManController::class, 'handle']);

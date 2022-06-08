@@ -29,7 +29,7 @@ class Event extends Model
 
   public function users()
   {
-    return $this->belongsToMany(User::class, 'event_user');
+    return $this->belongsToMany(User::class, 'event_user')->withPivot('time', 'id');
   }
 
   public function category()

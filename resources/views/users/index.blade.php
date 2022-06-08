@@ -9,14 +9,14 @@
     <div class="search-box">
       <form action="#" method="GET">
         <div class="flex">
-          <input class="search-input" type="text" name="search" placeholder="Zoek op naam">
+          <input class="search-input" type="search" name="search" placeholder="Zoek op naam" value="{{ app('request')->input('search') }}">
           <button class="search-btn" type="submit">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#000"/><line x1="20.4" y1="20.5" x2="15.5" y2="15.7" fill="none" stroke="#000"/></svg>        
           </button>
         </div>
       </form>
     </div>
-
+    
     <ul class="users-list">
       @foreach ($users as $user)
         <li class="users-list-item">

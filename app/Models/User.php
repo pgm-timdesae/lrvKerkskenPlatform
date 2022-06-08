@@ -52,7 +52,7 @@ class User extends Authenticatable
 
   public function events()
   {
-    return $this->belongsToMany(Event::class, 'event_user');
+    return $this->belongsToMany(Event::class, 'event_user')->withPivot('time', 'id');
   }
 
   public $timestamps = false;
