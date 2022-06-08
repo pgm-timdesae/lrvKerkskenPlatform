@@ -22,12 +22,23 @@
     </section>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <script>
 
 	    var botmanWidget = {
 
-	        aboutText: 'lrvKerksken',
+          title: 'LRV Kerksken chatbot',
+
+	        aboutText: 'made by Tim',
+
+	        placeholderText: 'Verzend een bericht',
+
+          mainColor: '#92EB68',
+
+          bubbleBackground: '#92EB68',
+
+          bubbleAvatarUrl: 'storage/images/boticon.png',
 
 	        introMessage: "✋ Hallo! Ik ben de chatbot van LRV Kerksken "
 

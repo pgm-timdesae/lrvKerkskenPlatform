@@ -20,7 +20,7 @@
       
             @auth
               <button type="submit" class="btn-primary btn-submit">
-                <span>Verzenden</span>
+                <span>Inschrijven</span>
               </button>
             @endauth
             @guest

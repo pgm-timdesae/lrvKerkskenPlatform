@@ -2,14 +2,13 @@
 Base
 ******************/
 
-body {
-  overflow-x: hidden;
-}
-
-body {
+html, body {
   background-color: $background-color;
+  background-image: none;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  font-size: $font-size-sm;
 }
 
 .h-layout {
