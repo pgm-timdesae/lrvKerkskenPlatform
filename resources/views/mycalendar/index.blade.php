@@ -62,17 +62,10 @@
       @endauth
 
       @guest
-          Om je kalender te bekijken moet je aangemeld zijn. 
-          Heb je nog geen profiel? Maak dan snel een account aan.
-
-          <a class="btn-primary" href="/login">
-            <span>Aanmelden</span>
-          </a>
-
-          <a class="btn-primary" href="/login">
-            <span>Registreren</span>
-          </a>
-
+      <p>
+        Om je kalender te bekijken moet je aangemeld zijn. <br/>
+        Heb je nog geen profiel? Maak dan snel een account aan.
+      </p>
       @endguest
     </div>
   </section>

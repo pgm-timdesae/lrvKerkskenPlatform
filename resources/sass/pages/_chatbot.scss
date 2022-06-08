@@ -1,0 +1,31 @@
+.chatbot-page {
+  .text {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - $padding-md*2);
+    padding: 0 $padding-md;
+
+    .list-green {
+      li {
+        padding: $padding-xs 0;
+        display: flex;
+        align-items: center;
+
+        .number {
+          color: $tertiare-color;
+          font-weight: $font-weight-semibold;
+          font-size: $font-size-md;
+          margin-right: $margin-sm;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 48rem){
+  .chatbot-page {
+    .text {
+      width: 65%;
+    }
+  }
+}

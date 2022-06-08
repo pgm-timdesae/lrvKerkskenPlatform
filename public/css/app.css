@@ -76,6 +76,8 @@
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
   margin-top: 1rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 .btn-delete span {
   font-size: 1rem;
@@ -858,6 +860,7 @@ footer {
 @media (min-width: 48rem) {
   .calendar-page .calendar-list {
     margin-top: 0;
+    padding-right: 2rem;
   }
   .calendar-page .calendar-list-item .wrapper {
     flex-direction: row;
@@ -875,6 +878,29 @@ footer {
   }
   .calendar-page .calendar-list-item:first-of-type:hover {
     background-color: transparent;
+  }
+}
+.chatbot-page .text {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 4rem);
+  padding: 0 2rem;
+}
+.chatbot-page .text .list-green li {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+.chatbot-page .text .list-green li .number {
+  color: #92EB68;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .chatbot-page .text {
+    width: 65%;
   }
 }
 .detail-page .flex {
@@ -969,9 +995,10 @@ footer {
   flex-direction: column;
 }
 .document-page .documents-list-item {
-  width: 100%;
+  width: calc(100% - 4rem);
   position: relative;
-  padding: 2rem 0;
+  padding: 2rem;
+  transition: 0.3s all ease-in;
 }
 .document-page .documents-list-item .flex svg {
   width: 3rem;
@@ -1005,6 +1032,13 @@ footer {
   left: 0;
   transition: 0.3s all ease-in;
 }
+.document-page .documents-list-item:hover {
+  background-color: #fff;
+}
+.document-page .documents-list-item .btn-delete {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 
 @media (min-width: 48rem) {
   .document-page {
@@ -1016,6 +1050,7 @@ footer {
   .document-page .documents-list {
     display: flex;
     flex-direction: column;
+    padding-right: 2rem;
   }
   .document-page .documents-list-item .flex {
     display: flex;
@@ -1023,16 +1058,16 @@ footer {
     align-items: center;
   }
   .document-page .documents-list-item .flex svg {
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
   .document-page .documents-list-item .flex h3 {
-    width: 40%;
+    width: 45%;
   }
   .document-page .documents-list-item .flex .created {
-    width: 20%;
+    width: 15%;
   }
   .document-page .documents-list-item .flex .btn-primary {
-    width: 10rem;
+    width: 7rem;
     margin-top: 0;
   }
   .document-page .documents-list-item .flex .btn-delete {

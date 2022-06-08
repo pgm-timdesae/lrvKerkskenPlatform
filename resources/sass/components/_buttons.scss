@@ -83,6 +83,8 @@
   cursor: pointer;
   transition: all .4s cubic-bezier(.7, 0, .3, 1);
   margin-top: $margin-sm;
+  margin-left: 0;
+  margin-right: 0;
 
   span {
     font-size: $font-size-sm;

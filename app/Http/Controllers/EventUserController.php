@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\EventUser;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class EventUserController extends Controller
 {
@@ -15,12 +16,16 @@ class EventUserController extends Controller
    */
   public function index()
   {
-    $user = User::find(auth()->user()->id);
+    if (Auth::check()) {
+      // The user is logged in...
+      $user = User::find(auth()->user()->id);
 
-    //dd($user->events->pivot->id);
-    return view('mycalendar.index', [
-      'user' => $user
-    ]);
+      return view('mycalendar.index', [
+        'user' => $user
+      ]);
+    }
+
+    return view('mycalendar.index');
   }
 
   /**

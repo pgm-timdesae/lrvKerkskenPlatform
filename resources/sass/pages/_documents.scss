@@ -9,9 +9,10 @@
     flex-direction: column;
   
     &-item {
-      width: 100%;
+      width: calc(100% - $padding-md*2);
       position: relative;
-      padding: $padding-md 0;
+      padding: $padding-md;
+      transition: $transition-base;
   
       .flex {
         svg {
@@ -55,6 +56,15 @@
         left: 0;
         transition: $transition-base;
       }
+
+      &:hover {
+        background-color: $white;
+      }
+
+      .btn-delete {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+      }
     }
   }
 }
@@ -70,6 +80,7 @@
     .documents-list {
       display: flex;
       flex-direction: column;
+      padding-right: $padding-md;
     
       &-item {  
         .flex {
@@ -78,19 +89,19 @@
           align-items: center;
   
           svg {
-           margin-right: $margin-md; 
+           margin-right: $margin-sm; 
           }
   
           h3 {
-            width: 40%;
+            width: 45%;
           }
   
           .created {
-            width: 20%;
+            width: 15%;
           }
     
           .btn-primary {
-            width: 10rem;
+            width: 7rem;
             margin-top: 0;
           }
 
