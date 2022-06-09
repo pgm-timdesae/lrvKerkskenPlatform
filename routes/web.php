@@ -32,7 +32,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('in
 Route::get('/', [PagesController::class, 'index']);
 
 // Documents
-Route::get('/documents', [PagesController::class, 'documents']);
+//Route::get('/documents', [PagesController::class, 'documents']);
 
 //Chatbot
 Route::get('/chatbot', [PagesController::class, 'chatbot']);
@@ -46,7 +46,8 @@ Route::resource('/events', EventsController::class);
 // Users
 Route::resource('/users', UsersController::class);
 
-// Documents
+// Files
+Route::get('/files/download/{id}', [App\Http\Controllers\FilesController::class, 'downloadFile'])->name('downloadFile');
 Route::resource('/files', FilesController::class);
 
 // Calender

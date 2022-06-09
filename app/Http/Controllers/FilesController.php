@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\File;
+use Illuminate\Support\Facades\Storage;
 
 class FilesController extends Controller
 {
@@ -62,9 +63,17 @@ class FilesController extends Controller
    * @param  int  $id
    * @return \Illuminate\Http\Response
    */
-  public function show($id)
+  public function downloadFile($id)
   {
-    //
+    $file = File::find($id);
+
+    $fileName = $file->name;
+
+    $file = public_path() . $file->file_path;
+
+    $headers = ['Content-Type: pdf/txt/xlx/xls/csv'];
+
+    return response()->download($file, $fileName, $headers);
   }
 
   /**

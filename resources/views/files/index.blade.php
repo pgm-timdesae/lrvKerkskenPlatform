@@ -20,7 +20,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14,2H4V22H20V8Z" fill="none" stroke="#000" stroke-miterlimit="10"/><polyline points="14 2 14 8 20 8" fill="none" stroke="#000" stroke-miterlimit="10"/></svg>
               <h3>{{ $file->name }}</h3>
               <p class="created">{{ date('d - m - Y', strtotime($file->created_at)) }}</p>
-              <a  href="/" class="btn-primary">
+              <a  href="/files/download/{{ $file->id }}" class="btn-primary">
                 <span>Download</span>
               </a>
 
