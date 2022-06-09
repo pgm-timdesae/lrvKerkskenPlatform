@@ -75,7 +75,24 @@
         <ul class="users-list">
           @forelse ($event->users as $user)
           <li class="users-list-item">
-            {{ $user->name }}
+            <p class="username">{{ $user->name }}</p>
+
+            @switch($user->pivot->time)
+            @case('one')
+            <p class="time">tijdslot 1: 18u00-18u30</p>
+            @break
+            @case('two')
+            <p class="time">tijdslot 2: 18u30-19u00</p>
+                @break
+            @case('tree')
+            <p class="time">tijdslot 3: 19u00-19u30</p>
+                @break
+            @case('No')
+            <p class="time">geen tijdslot</p>
+                @break
+            @default
+            <p class="time">geen tijdslot</p>
+          @endswitch
           </li>
               
           @empty

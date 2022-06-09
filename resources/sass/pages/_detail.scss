@@ -75,7 +75,13 @@
           bottom: 0;
           left: 0;
           transition: $transition-base;
-        }    
+        }  
+        
+        .username {
+          font-weight: $font-weight-semibold;
+          color: $primary-color;
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -98,7 +104,18 @@
     }
 
     .going {
-      margin-left: $margin-md;
+      .users-list-item {
+        display: flex;
+        align-items: center;
+
+        .username {
+          width: 12rem;
+        }
+
+        .time {
+          width: 20rem;
+        }
+      }
     }
   }  
 }

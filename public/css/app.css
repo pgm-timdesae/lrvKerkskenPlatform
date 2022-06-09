@@ -977,6 +977,11 @@ footer {
   left: 0;
   transition: 0.3s all ease-in;
 }
+.detail-page .going .users-list-item .username {
+  font-weight: 600;
+  color: #355E42;
+  text-transform: uppercase;
+}
 
 @media (min-width: 48rem) {
   .detail-page .flex {
@@ -990,8 +995,15 @@ footer {
   .detail-page .flex .detail-sidebar {
     width: 25%;
   }
-  .detail-page .going {
-    margin-left: 2rem;
+  .detail-page .going .users-list-item {
+    display: flex;
+    align-items: center;
+  }
+  .detail-page .going .users-list-item .username {
+    width: 12rem;
+  }
+  .detail-page .going .users-list-item .time {
+    width: 20rem;
   }
 }
 .document-page .intro {
