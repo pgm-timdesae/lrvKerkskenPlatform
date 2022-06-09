@@ -38,7 +38,8 @@ class EventsController extends Controller
 
   public function past()
   {
-    $events = Event::orderBy('date', 'asc')
+    $events = Event::orderBy('date', 'desc')
+      ->filter(request(['search']))
       ->where('date', '<', now()->subDay())
       ->get();
 

@@ -28,7 +28,6 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 
-//Route::get('/users', [App\Http\Controllers\UsersController::class, 'index'])->name('users');
 //Homepage
 Route::get('/', [PagesController::class, 'index']);
 
@@ -40,9 +39,9 @@ Route::get('/chatbot', [PagesController::class, 'chatbot']);
 
 
 // Events
-//Route::get('events/{id}', [EventsController::class, 'show']);
+Route::get('/events/past', [App\Http\Controllers\EventsController::class, 'past'])->name('past');
 Route::resource('/events', EventsController::class);
-//Route::get('/events/past', [EventsController::class, 'past']);
+
 
 // Users
 Route::resource('/users', UsersController::class);
@@ -59,7 +58,6 @@ Route::get('categories/{category:slug}', function (Category $category) {
     'events' => $category->events
   ]);
 });
-
 
 /**************
 Botman

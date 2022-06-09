@@ -31,12 +31,12 @@
       <div class="form__group">        
         <label for="category_id"><span class="number">03</span>Selecteer het type evenement</label>
         <select name="category_id" id="category_id">
-          <option value="1">Springen</option>
-          <option value="2">Dressuur</option>
-          <option value="3">Feest</option>
-          <option value="4">Tornooi</option>
-          <option value="5">Werkdag</option>
-          <option value="6">Eetfestijn</option>
+          <option value="1" {{ $event->category_id == 1 ? 'selected' : '' }}>Springen</option>
+          <option value="2" {{ $event->category_id == 2 ? 'selected' : '' }}>Dressuur</option>
+          <option value="3" {{ $event->category_id == 3 ? 'selected' : '' }}>Feest</option>
+          <option value="4" {{ $event->category_id == 4 ? 'selected' : '' }}>Tornooi</option>
+          <option value="5" {{ $event->category_id == 5 ? 'selected' : '' }}>Werkdag</option>
+          <option value="6" {{ $event->category_id == 6 ? 'selected' : '' }}>Eetfestijn</option>
         </select>
       </div>
 

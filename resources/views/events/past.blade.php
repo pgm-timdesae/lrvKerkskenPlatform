@@ -46,7 +46,7 @@
               </div>
 
               <div class="text">
-                <a href="events/{{ $event->id }}/edit">
+                <a href="/events/{{ $event->id }}/edit">
                   <svg class="svg-edit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="7.5 16.5 8 13.5 18.5 3 19.5 3 21 4.5 21 5.5 10.5 16 7.5 16.5" fill="none" stroke="#000" stroke-miterlimit="10"/><line x1="16.5" y1="4.5" x2="19.5" y2="7.5" fill="none" stroke="#000" stroke-miterlimit="10"/><polyline points="16.5 15.5 16.5 21.5 2.5 21.5 2.5 7.5 8.5 7.5" fill="none" stroke="#000"/></svg>
                 </a>
 
@@ -76,6 +76,9 @@
 
   </section>
 </main>
+ 
+
+ <h1>test</h1>
 
 @endsection
 

@@ -70,10 +70,10 @@
       <div class="form__group">        
         <label for="role"><span class="number">11</span>Selecteer je rol binnen de club</label>
         <select name="role" id="role" value="{{ $user->role }}">
-          <option value="bestuurslid">Bestuurslid</option>
-          <option selected="selected" value="wedstrijdruiter">Wedstrijdruiter</option>
-          <option value="wandelruiter">Wandelruiter</option>
-          <option value="ouder">Ouder</option>
+          <option value="bestuurslid" {{ $user->role == 'bestuurslid' ? 'selected' : '' }}>bestuurslid</option>
+          <option value="wedstrijdruiter" {{ $user->role == 'wedstrijdruiter' ? 'selected' : '' }}>wedstrijdruiter</option>
+          <option value="wandelruiter" {{ $user->role == 'wandelruiter' ? 'selected' : '' }}>wandelruiter</option>
+          <option value="ouder" {{ $user->role == 'ouder' ? 'selected' : '' }}>ouder</option>
         </select>
       </div>
 
