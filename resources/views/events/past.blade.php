@@ -3,7 +3,7 @@
 @section('content')
 
 <main class="main-content">
-  <section class="h-layout">
+  <section class="h-layout past-page">
     <h1>Afgelopen evenementen</h1>
 
     <div class="search-box">
@@ -76,9 +76,5 @@
 
   </section>
 </main>
- 
-
- <h1>test</h1>
-
 @endsection
 

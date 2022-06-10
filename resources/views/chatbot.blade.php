@@ -18,7 +18,7 @@
 
       <div>
         <h3>Hoe werkt de chatbot?</h3>
-        <p>De chatbot werkt via een vast systeem van inschrijven.</p>
+        <p>De chatbot werkt via een vaste flow zodat inschrijven heel erg makkelijk wordt.</p>
         <ul class="list-green">
           <li>
             <span class="number">01</span> 
@@ -30,7 +30,7 @@
             <span class="number">02</span>
             <p>
               Vervolgens krijg je een lijst van alle evenementen.
-              Bij elk evenement staat er een nummer. Geef het nummer van het evenement waarvoor je wil inschrijven door aan de chatbot.
+              Klik op het evenement waarvoor jij wenst in te schrijven.
             </p>
           </li>
           <li>

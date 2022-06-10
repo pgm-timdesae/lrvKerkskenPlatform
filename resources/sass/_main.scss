@@ -11,6 +11,10 @@ html, body {
   font-size: $font-size-sm;
 }
 
+.body-wrapper {
+  overflow-x: hidden;
+}
+
 .h-layout {
   padding: 0 2rem;
 }

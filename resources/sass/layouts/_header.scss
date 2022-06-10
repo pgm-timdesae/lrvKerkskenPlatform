@@ -9,12 +9,13 @@
   z-index: 100;
   width: 100vw;
   height: 100vh;
-  overflow-y: scroll;
   background-color: $white;
 
   &.open {
+    position: fixed;
     transform: translateX(0);
     height: 100vh;
+    overflow-y: hidden;
   }
 }
 
@@ -184,7 +185,7 @@
 
 //hamburger
 .hamburger-btn {
-  position: absolute;
+  position: fixed;
   top: 2rem;
   right: 2rem;
   display: block;

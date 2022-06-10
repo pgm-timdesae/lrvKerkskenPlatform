@@ -32,8 +32,9 @@
     </svg>
   </button>
   
-
-  @yield('content')
+  <div class="body-wrapper">
+    @yield('content')
+  </div>
 
   <footer>
     @include('layouts.footer') 

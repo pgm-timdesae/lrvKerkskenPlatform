@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap);
 /* Buttons */
 .btn-link {
   transition: 0.3s all ease-in;
@@ -274,6 +275,10 @@
     text-align: center;
   }
 }
+.past-page {
+  width: 100%;
+}
+
 .filter {
   margin: 2rem 0;
 }
@@ -549,6 +554,10 @@
     text-align: center;
   }
 }
+.past-page {
+  width: 100%;
+}
+
 .search-box {
   border-radius: 10px;
 }
@@ -607,12 +616,13 @@ footer {
   z-index: 100;
   width: 100vw;
   height: 100vh;
-  overflow-y: scroll;
   background-color: #fff;
 }
 .site-header.open {
+  position: fixed;
   transform: translateX(0);
   height: 100vh;
+  overflow-y: hidden;
 }
 
 @media (min-width: 48rem) {
@@ -683,7 +693,7 @@ footer {
   margin-right: 1rem;
 }
 .header__nav .nav__list__item a {
-  color: #000;
+  color: #151515;
   transition: 0.3s all ease-in;
 }
 .header__nav .nav__list__item a.active {
@@ -710,7 +720,7 @@ footer {
     margin-right: 1rem;
   }
   .header__nav .nav__list__item a {
-    color: #000;
+    color: #151515;
     opacity: 0.5;
     transition: 0.3s all ease-in;
   }
@@ -740,7 +750,7 @@ footer {
 }
 .header__info a {
   display: block;
-  color: #000;
+  color: #151515;
   opacity: 0.5;
   transition: 0.3s all ease-in;
   margin-bottom: 1rem;
@@ -751,7 +761,7 @@ footer {
 }
 
 .hamburger-btn {
-  position: absolute;
+  position: fixed;
   top: 2rem;
   right: 2rem;
   display: block;
@@ -910,12 +920,12 @@ footer {
   background-color: #355E42 !important;
 }
 
+.detail-page h2 {
+  margin-top: 4rem;
+}
 .detail-page .flex {
   display: flex;
   flex-direction: column-reverse;
-}
-.detail-page .flex .detail-main {
-  width: 90%;
 }
 .detail-page .flex .detail-main .succes {
   width: -webkit-fit-content;
@@ -926,7 +936,8 @@ footer {
   margin-bottom: 2rem;
 }
 .detail-page .flex .detail-main button {
-  width: calc(100% - 4rem);
+  width: 100%;
+  margin-left: 0;
 }
 .detail-page .flex .detail-sidebar {
   width: 90%;
@@ -941,7 +952,7 @@ footer {
 }
 .detail-page .flex .detail-sidebar .text-group p {
   margin-top: 0.5rem;
-  color: #355E42;
+  color: #151515;
 }
 .detail-page .going {
   margin-top: 2rem;
@@ -984,6 +995,9 @@ footer {
 }
 
 @media (min-width: 48rem) {
+  .detail-page h2 {
+    margin-top: 0;
+  }
   .detail-page .flex {
     flex-direction: row;
     justify-content: space-between;
@@ -992,8 +1006,12 @@ footer {
   .detail-page .flex .detail-main {
     width: 60%;
   }
+  .detail-page .flex .detail-main button {
+    width: calc(100% - 4rem);
+    margin-left: 2rem;
+  }
   .detail-page .flex .detail-sidebar {
-    width: 25%;
+    width: 30%;
   }
   .detail-page .going .users-list-item {
     display: flex;
@@ -1347,6 +1365,10 @@ html, body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   font-size: 1rem;
+}
+
+.body-wrapper {
+  overflow-x: hidden;
 }
 
 .h-layout {

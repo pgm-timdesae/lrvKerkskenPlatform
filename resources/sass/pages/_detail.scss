@@ -1,12 +1,14 @@
 //DETAIL EVENT
 .detail-page {
+  h2 {
+    margin-top: $margin-md*2;
+  }
+
   .flex {
     display: flex;
     flex-direction: column-reverse;
 
     .detail-main {
-      width: 90%;
-
       .succes {
         width: fit-content;
       }
@@ -16,7 +18,8 @@
       }
 
       button {
-        width: calc(100% - $padding-md*2);
+        width: 100%;
+        margin-left: 0;
       }
     }
 
@@ -35,7 +38,7 @@
         
         p {
           margin-top: $margin-xs;
-          color: $primary-color;
+          color: $black;
         } 
       }   
     }
@@ -89,6 +92,10 @@
 
 @media (min-width: 48rem) {
   .detail-page {
+    h2 {
+      margin-top: 0;
+    }
+
     .flex {
       flex-direction: row;
       justify-content: space-between;
@@ -96,10 +103,15 @@
     
       .detail-main {
         width: 60%;
+
+        button {
+          width: calc(100% - $padding-md*2);
+          margin-left: $padding-md;
+        }
       }
   
       .detail-sidebar {
-        width: 25%;
+        width: 30%;
       }
     }
 
