@@ -41,3 +41,14 @@
     }
   }
 }
+
+.msg {
+  word-wrap: break-word;
+  min-width: 50px;
+  max-width: 80%;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: $primary-color;
+}

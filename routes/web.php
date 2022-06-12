@@ -31,9 +31,6 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('in
 //Homepage
 Route::get('/', [PagesController::class, 'index']);
 
-// Documents
-//Route::get('/documents', [PagesController::class, 'documents']);
-
 //Chatbot
 Route::get('/chatbot', [PagesController::class, 'chatbot']);
 

@@ -15,10 +15,6 @@ class Event extends Model
 
   protected $fillable = ['name', 'location', 'category_id', 'date', 'description'];
 
-  //protected $timestamps = true;
-
-  //protected $dateFormat = 'h:m:s';
-
   public function scopeFilter($query, array $filters)
   {
     if ($filters['search'] ?? false) {

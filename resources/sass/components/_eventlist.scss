@@ -26,6 +26,7 @@
     position: relative;
     width: 100%;
     display: flex;
+    margin-bottom: $margin-md;
 
     .wrapper {
       position: relative;
@@ -229,6 +230,9 @@
   }
 }
 
-.past-page {
-  width: 100%;
+
+@media (min-width: 48rem){
+  .past-page {
+    width: 100%;
+  }
 }

@@ -18,6 +18,8 @@
 
       <!-- Styles -->
       <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+      <link rel="icon" href="{{ asset('storage/images/boticon.png') }}">
   </head>
 
   <header class="site-header">

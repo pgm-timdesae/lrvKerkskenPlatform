@@ -113,6 +113,7 @@
   position: relative;
   width: 100%;
   display: flex;
+  margin-bottom: 2rem;
 }
 .events-home__list-item .wrapper {
   position: relative;
@@ -275,10 +276,11 @@
     text-align: center;
   }
 }
-.past-page {
-  width: 100%;
+@media (min-width: 48rem) {
+  .past-page {
+    width: 100%;
+  }
 }
-
 .filter {
   margin: 2rem 0;
 }
@@ -392,6 +394,7 @@
   position: relative;
   width: 100%;
   display: flex;
+  margin-bottom: 2rem;
 }
 .events-home__list-item .wrapper {
   position: relative;
@@ -554,10 +557,11 @@
     text-align: center;
   }
 }
-.past-page {
-  width: 100%;
+@media (min-width: 48rem) {
+  .past-page {
+    width: 100%;
+  }
 }
-
 .search-box {
   border-radius: 10px;
 }
@@ -918,6 +922,15 @@ footer {
 }
 #messageArea ol.chat .chatbot {
   background-color: #355E42 !important;
+}
+
+.msg {
+  word-wrap: break-word;
+  min-width: 50px;
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  background: #355E42;
 }
 
 .detail-page h2 {
