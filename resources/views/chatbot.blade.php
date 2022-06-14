@@ -49,9 +49,6 @@
       </div>
     </section>
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
     <script>
 
 	    var botmanWidget = {

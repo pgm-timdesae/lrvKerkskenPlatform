@@ -17,6 +17,7 @@
       <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
       <!-- Styles -->
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
       <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
       <link rel="icon" href="{{ asset('storage/images/boticon.png') }}">
